@@ -1,10 +1,11 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+
+
 
 const ulEl = document.querySelector('.gallery')
-console.log(ulEl)
+
 
 const newGallary = galleryItems.map((item) => 
  `<li class="gallery__item">
@@ -19,7 +20,7 @@ const newGallary = galleryItems.map((item) =>
 ulEl.innerHTML = newGallary;
 
 
-document.addEventListener('click', (event) => {
+ulEl.addEventListener('click', (event) => {
     event.preventDefault();
        
     const instance = basicLightbox.create(`
